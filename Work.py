@@ -14,7 +14,7 @@ import time
 
 
 def connect_to_sql():
-    conn = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='cna330')
+    conn = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='Computer_Parts')
 
 
 def create_tables(cursor, Computer_Parts):
