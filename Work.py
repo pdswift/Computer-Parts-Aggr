@@ -19,6 +19,7 @@ c.execute("CREATE TABLE Computer_Parts "
           "(id INT PRIMARY KEY, Date DATE, Class TEXT, Name TEXT, Model INT, "
           "Manufacturer TEXT, Quantity INT, Price FLOAT, Site TEXT")
 
+# Creates test entry to ensure things are going as they should be.
 c.execute("INSERT INTO Computer_Parts VALUES(0,'11/8/18', 'RAM', 'Corsair 64gb RAM 3200',"
           " '224873', 'Corsair', '64','550.98', 'Amazon')")
 c.close()
