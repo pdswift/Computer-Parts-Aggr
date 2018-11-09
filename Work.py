@@ -15,33 +15,25 @@ import time
 
 conn = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='Computer_Parts')
 c = conn.cursor()
-c.execute('''CREATE TABLE "Computer_Parts" (id INT PRIMARY KEY AUTOINCREMENT, Date DATE, Class TEXT,
-Name TEXT, Model INT, Manufacturer TEXT, Quantity INT, Price FLOAT, Site TEXT);''')
+c.execute("CREATE TABLE Computer_Parts "
+          "(id INT PRIMARY KEY, Date DATE, Class TEXT, Name TEXT, Model INT, "
+          "Manufacturer TEXT, Quantity INT, Price FLOAT, Site TEXT")
 
-c.execute("INSERT INTO Jobs(id, Date, Class, Name, Model, Manufacturer, Quantity, Price, Site)"""
-               " VALUES(0,'11/8/18', 'RAM', 'Corsair 64gb RAM 3200', '224873', 'Corsair', '64',""
-                '550.98', 'Amazon')
+c.execute("INSERT INTO Computer_Parts VALUES(0,'11/8/18', 'RAM', 'Corsair 64gb RAM 3200',"
+          " '224873', 'Corsair', '64','550.98', 'Amazon')")
 c.close()
-
 
 
 # {                 Planning on using these in boolean ops later, may delete if better method found
 # Classes for db table, and var assignment for later processing
-a = "RAM"
-b = "Heat_Sink"
-c = "CPU"
-d = "PSU"
-e = "Mother_Board"
+a = "RAM"; b = "Heat_Sink"; c = "CPU"; d = "PSU"; e = "Mother_Board"
 
 # Sites for db table, and var assignment for later processing
-am = "Amazon"
-bb = "Best_Buy"
-f = "Frys"
-ne = "New_Egg"
+am = "Amazon"; bb = "Best_Buy"; f = "Frys"; ne = "New_Egg"
 # }
 
 # Runs with exit code 0, no errors, but does not create DB, PSwift, compare with your JH script please.
-## Work in progress below
+# Work in progress below
 
 counter = 0
 query = "#INSERT URL(S) HERE#"
