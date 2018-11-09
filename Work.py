@@ -33,7 +33,7 @@ a = "RAM"; b = "Heat_Sink"; c = "CPU"; d = "PSU"; e = "Mother_Board"
 am = "Amazon"; bb = "Best_Buy"; f = "Frys"; ne = "New_Egg"
 # }
 
-# Runs with exit code 0, no errors, but does not create DB, PSwift, compare with your JH script please.
+# Runs with exit code 0, no errors, and now creates and writes to the db/table
 # Work in progress below
 
 counter = 0
