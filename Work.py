@@ -2,7 +2,7 @@
 # CNA 330
 # Group Project with PSwift
 # Nathan Wick, ncwick@student.rtc.edu/ncwick96@gmail.com
-#parker Swift, pdswift@stundent.rtc.edu
+# parker Swift, pdswift@stundent.rtc.edu
 # Code referenced from: https://github.com/RTCedu/CNA330/JobHunter/JobHunter.py
 # https://github.com/RTCedu/CNA336/Spring2018/Sql.py
 
